@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTalk</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">FinTalk</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features" onclick="toggleSection('features')">Features</a>
+            <a href="#functionality" onclick="toggleSection('functionality')">Functionality</a>
+            <a href="#contact" onclick="toggleSection('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Meet Your Finance Assistant</h1>
+        <p>Instant budgeting tips and investment advice. Chat now to get started!</p>
+        <a href="#chat" class="cta-button chatbot-toggler">Chat Now</a>
+    </div>
+
+    <div id="features" class="hidden-section">
+        <h2>Features</h2>
+        <div class="feature">
+            <h3>Smart Budgeting</h3>
+            <p>Easily track and manage your expenses.</p>
+        </div>
+        <div class="feature">
+            <h3>Investment Insights</h3>
+            <p>Personalized investment advice to grow your wealth.</p>
+        </div>
+        <div class="feature">
+            <h3>Savings Goals</h3>
+            <p>Set and monitor your savings goals effectively.</p>
+        </div>
+    </div>
+
+    <div id="functionality" class="hidden-section">
+        <h2>Functionality</h2>
+        <p>Our chatbot helps you with budgeting, investment advice, savings goals, and much more. All powered by AI.</p>
+    </div>
+
+    <div id="contact" class="hidden-section">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@financebot.com">info@financebot.com</a></p>
+        <p>Follow us:
+            <a href="#" aria-label="Facebook">Facebook</a> |
+            <a href="#" aria-label="Twitter">Twitter</a> |
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 FinTalk. All rights reserved.</p>
+    </div>
+
+    <div class="chatbot-container" id="chat">
+        <div class="chatbot-header">
+            FinanceBot
+            <span class="close-btn" aria-label="Close Chat">×</span>
+        </div>
+        <ul class="chatbox"></ul>
+        <div class="chat-input">
+            <textarea placeholder="Type your message..."></textarea>
+            <span class="send-btn" aria-label="Send Message">⮞</span>
+            <span class="mic-btn" aria-label="Voice Input">🎤</span>
+            <input type="file" id="image-upload" accept="image/*" style="display: none;">
+            <label for="image-upload" class="image-btn" title="Upload Image" aria-label="Upload Image">🖼</label>
+        </div>
+    </div>
+
+</body>
+
+</html>
